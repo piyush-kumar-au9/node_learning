@@ -2,51 +2,51 @@
 <html>
   <head>
     <style>
+      body {
+        width: 668px;
+        height: 439px;
+      }
+
       .container {
         display: flex;
         width: 800px;
         height: 800px;
         background: rgb(119, 30, 147);
       }
-      .design {
+      .base_design {
         width: 0px;
         height: 0px;
-        border-right: 120px solid yellow;
-        border-bottom: 137px solid yellow;
         border-bottom-left-radius: 97px;
         border-top-right-radius: 86px;
+        margin:100px;
+      }
+      .design1 {
+        border-right: 120px solid yellow;
+        border-bottom: 137px solid yellow;
         transform: scaleX(-1);
       }
 
-      .design1 {
-        width: 0px;
-        height: 0px;
+      .design2 {
         border-right: 120px solid red;
         border-bottom: 137px solid red;
-        border-bottom-left-radius: 97px;
-        border-top-right-radius: 86px;
         position: absolute;
-        left: 10%;
+        left: 3%;
         transform: scaleX(-1);
       }
-      .design2 {
-        width: 0px;
-        height: 0px;
+      .design3 {
         border-right: 120px solid blue;
         border-bottom: 137px solid blue;
-        border-bottom-left-radius: 97px;
-        border-top-right-radius: 86px;
         position: absolute;
-        left: 20%;
+        left: 5%;
         transform: scaleX(-1);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="design"></div>
-      <div class="design1"></div>
-      <div class="design2"></div>
+      <div class="base_design design1"></div>
+      <div class="base_design design2"></div>
+      <div class="base_design design3"></div>
     </div>
   </body>
 </html>

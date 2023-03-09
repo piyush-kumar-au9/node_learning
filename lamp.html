@@ -2,6 +2,11 @@
 <html>
   <head>
     <style>
+      body {
+        width: 668px;
+        height: 439px;
+      }
+
       .container {
         display: flex;
         justify-content: center;
@@ -9,7 +14,8 @@
         margin: 100px;
         padding: 50px;
       }
-      .leaf {
+
+      .base_leaf {
         width: 0;
         height: 0;
         border-left: 54px solid chocolate;
@@ -18,31 +24,23 @@
       }
 
       .leaf1 {
-        width: 0;
-        height: 0;
-        border-left: 54px solid chocolate;
-        border-bottom: 65px solid chocolate;
-        border-radius: 0% 100%;
         transform: scaleY(-1);
       }
 
       .leaf2 {
-        width: 0;
-        height: 0;
         border-left: 54px solid white;
         border-bottom: 65px solid white;
-        border-radius: 0% 100%;
         transform: rotate(38deg);
         position: absolute;
-        bottom: 233px;
+        bottom: 428px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="leaf"></div>
-      <div class="leaf1"></div>
-      <div class="leaf2"></div>
+      <div class="base_leaf"></div>
+      <div class="base_leaf leaf1"></div>
+      <div class="base_leaf leaf2"></div>
     </div>
   </body>
 </html>
